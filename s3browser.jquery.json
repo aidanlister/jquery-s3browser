@@ -1,0 +1,28 @@
+{
+    "name": "s3browser",
+    "title": "jQuery S3 browser",
+    "description": "jQuery plugin to generate a directory listing from an Amazon (AWS) S3 bucket.",
+    "keywords": [
+        "amazon",
+        "S3",
+        "AWS"
+    ],
+    "version": "1.1.0",
+    "author": {
+        "name": "Aidan Lister",
+        "url": "http://www.aidanlister.com/"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://raw.githubusercontent.com/aidanlister/jquery-s3browser/master/LICENSE"
+        }
+    ],
+    "bugs": "https://github.com/aidanlister/jquery-s3browser/issues",
+    "homepage": "https://github.com/aidanlister/jquery-s3browser",
+    "docs": "https://github.com/aidanlister/jquery-s3browser",
+    "download": "https://github.com/aidanlister/jquery-s3browser",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
