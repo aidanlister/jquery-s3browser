@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>jQuery S3 browser example</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body style="max-width: 500px;">
+        <p>Welcome to the jQuery S3 browser example. You'll need to edit this file adding your AWS settings (accesskeyId, secretAccessKey, region) and your bucket name and optional filter prefix (the element data attributes, data-bucket and data-prefix).</p>
+
+        <div class="filebrowser" data-bucket="yourbucketname" data-prefix="">Loading ...</div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/aws-sdk/2.0.0-rc.19/aws-sdk.js"></script>
+        <script src="jquery.s3browser.js"></script>
+        <script>
+        $(function() {
+            AWS.config.update({
+                accessKeyId: '',
+                secretAccessKey: '',
+                region: 'ap-southeast-2',
+                maxRetries: 1
+            });
+            $('.filebrowser').each(function(i, element) {
+                $(element).s3browser();
+            });
+        });
+        </script>
+    </body>
+</html>
